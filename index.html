@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inducargo</title>
+
+  <!-- Ícono y nombre del atajo -->
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="icon-192.png">
+  <link rel="manifest" href="manifest.json">
+  <meta name="apple-mobile-web-app-title" content="Inducargo">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#ffffff">
+
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <iframe
+    src="https://www.appsheet.com/start/087ea67a-ee05-4805-83af-35207f92948f"
+    allow="geolocation *; camera *; microphone *; fullscreen *; clipboard-write *">
+  </iframe>
+  <script>
+    // Si Safari muestra esta página desde "Atrás", la recarga para traer datos nuevos
+    window.addEventListener("pageshow", e => { if (e.persisted) location.reload(); });
+  </script>
+</body>
+</html>
